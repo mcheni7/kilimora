@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourist - Travel Agency HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Arusha, Kilimanjaro, Tanzania</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+255 784 554 555</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+ <div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <img src="img/logo.png" alt="Tembea Africa Logo" width="100%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                
+                <div class="nav-item dropdown dropdown-mega" style="position: static;">
+                    <a href="destination.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                    <div class="dropdown-menu m-0 p-4 mega-menu-content" style="width: 600px; background-color: rgba(255, 255, 255, 0.9);">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="mb-3 text-primary">Destinations</h5>
+                                <a href="destination-tanzania.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Tanzania</a>
+                                <a href="destination-kenya.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Kenya</a>
+                                <a href="destination-uganda.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Uganda</a>
+                                <a href="destination-rwanda.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rwanda</a>
+                                <a href="destination-southafrica.html" class="dropdown-item"><i class="fa fa-map-marker-alt text-primary me-2"></i>South Africa</a>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <img src="img/logo.png" alt="African Destinations Map" class="img-fluid"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown dropdown-mega" style="position: static;">
+                    <a href="safari-tours.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safari Tours</a>
+                    <div class="dropdown-menu m-0 p-4 mega-menu-content" style="width: 600px; background-color: #ffffff;">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="mb-3 text-primary">Safari Categories</h5>
+                                <a href="tour-wildlife.html" class="dropdown-item mb-2"><i class="fa fa-paw text-primary me-2"></i>Wildlife Safaris</a>
+                                <a href="tour-honeymoon.html" class="dropdown-item mb-2"><i class="fa fa-heart text-primary me-2"></i>Honeymoon & Couples</a>
+                                <a href="tour-budget.html" class="dropdown-item mb-2"><i class="fa fa-wallet text-primary me-2"></i>Budget Friendly Tours</a>
+                                <a href="tour-luxury.html" class="dropdown-item mb-2"><i class="fa fa-gem text-primary me-2"></i>Luxury & Exclusive</a>
+                                <a href="tour-family.html" class="dropdown-item"><i class="fa fa-users text-primary me-2"></i>Family Safaris</a>
+                            </div>
+                                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <img src="img/Giraffe.jpg" alt="Safari Promo Image" class="img-fluid"> 
+                                
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          <div class="nav-item dropdown dropdown-mega" style="position: static;">
+    <a href="experiences.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiences</a>
+    <div class="dropdown-menu m-0 p-4 mega-menu-content" style="width: 800px; background-color: rgba(255, 255, 255, 0.9);">
+        <div class="row">
+            
+            <div class="col-lg-6">
+                <h5 class="mb-3 text-primary">Experiences</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="exp-big5.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Big 5 Safari</a>
+                        <a href="exp-migration.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Great Migration</a>
+                        <a href="exp-kilimanjaro.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Mt. Kilimanjaro</a>
+                        <a href="exp-zanzibar.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Zanzibar Beach</a>
+                        <a href="exp-serengeti.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Serengeti Tours</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="exp-ngorongoro.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Ngorongoro Tours</a>
+                        <a href="exp-manyara.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Lake Manyara Tours</a>
+                        <a href="exp-tarangire.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Tarangire Tours</a>
+                        <a href="exp-photo.html" class="dropdown-item mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Photographic Safari</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <img src="img/ngo.jpg" alt="Experiences Promotional Image" class="img-fluid">
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+                <a href="#" class="nav-item nav-link">About</a>
+                <!-- <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="package.html" class="nav-item nav-link">Packages</a> -->
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a> -->
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-start py-5">
+            <div class="col-lg-6 pt-lg-5 mt-lg-5 text-start">
+
+                <h6 class="text-white mb-2 animated slideInDown" style="letter-spacing: 2px;">
+                    DISCOVER THE UNEXPECTED
+                </h6>
+
+                <h1 class="text-white mb-3 animated slideInDown" style="font-size: 3rem;">
+                    EARLY BIRD PROMO 2026
+                </h1>
+
+                <p class="fs-6 text-white mb-4 animated slideInDown">
+                    Plan ahead for your 2026 safari and enjoy 10% off on selected tours. 
+                    Secure your spot early and save on unforgettable adventures across Tanzania’s top destinations.
+                </p>
+
+                <a href="#" class="btn btn-primary rounded-pill py-3 px-5 animated slideInDown">
+                    VIEW PROMOS
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Navbar & Hero End -->
+
+
+    <!-- migration tours -->
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/t2.jpg" alt="" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                
+                <h6 class="section-title bg-white text-start pe-3" style="color:#4B2E18 !important;">2026 Great </h6>
+                
+                <h1 class="mb-4"><span style="color: #4B2E18 !important;">Migration Tours</span></h1>
+                
+                <p class="mb-4">The Great Migration is the world’s most spectacular wildlife event — millions of wildebeest and zebra crossing the Serengeti in search of fresh grazing, with predators close behind. For 2026, we’ve crafted special itineraries to match the season’s highlights, 
+                    from the calving grounds in Ndutu (Jan–Mar) to the dramatic Mara River crossings (July–Oct).</p>
+                <p class="mb-4">Book before the end of 2025 and enjoy 10% off on selected tours. Secure your front-row seat to one of nature’s greatest shows.</p>
+                
+               
+                
+              <a href="#" class="view-tours-link">
+    <span class="arrow">→</span> VIEW TOURS
+</a>
+<div class="view-tours-underline"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Migration End -->
+
+
+    
+    <!-- About Safari Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                
+                <h6 class="section-title bg-white text-start pe-3" style="color:#4B2E18 !important;">About </h6>
+                
+                <h1 class="mb-4"><span style="color: #4B2E18 !important;">Gosheni Safari</span></h1>
+                
+                <p class="mb-4">We are well-established business founded in 2009 by Peter Robert (Managing Director) who worked as a tour guide and driver before founding the company. We are locally owned and based in Tanzania and Kenya. We also operate our own fleet of vehicles and employ our own drivers and guides which makes our prices competetive as it eliminates commission to third parties. We have been voted 
+                    consistently as a top safari operator after years of providing consistent reliable service to our guests.</p>
+
+               
+                
+              <a href="#" class="view-tours-link">
+    <span class="arrow">→</span>READ MORE
+</a>
+<div class="view-tours-underline"></div>
+
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/car.jpeg" alt="" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- About End -->
+
+
+  <!-- Popular Tours Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+
+        <!-- Title Section -->
+        <div class="text-center mb-4">
+            <h1 class="popular-title">Popular Tours</h1>
+            <p class="popular-subtitle">
+                Discover Africa’s wonders with our expertly crafted tours. 
+                Experience captivating landscapes and vibrant cultures on unforgettable journeys.
+            </p>
+        </div>
+
+        <!-- Filter Menu -->
+    <div class="tour-filter d-flex justify-content-center gap-4 mb-4">
+    <a href="#" class="filter-link active-filter" data-filter="tanzania">Tanzania</a>
+    <a href="#" class="filter-link" data-filter="great-migration">Great Migration</a>
+    <a href="#" class="filter-link" data-filter="kilimanjaro">Mt Kilimanjaro</a>
+    <a href="#" class="filter-link" data-filter="zanzibar">Zanzibar</a>
+    <a href="#" class="filter-link" data-filter="kruger">Kruger South Africa</a> 
+</div>
+
+
+        <!-- Tour Cards -->
+        <div class="row g-4" id="tour-cards-container">
+
+             <!-- TANZANIA MIGRATION -->
+            <div class="col-lg-4 col-md-6 tour-card-item tanzania">
+                <div class="tour-card">
+                    <img src="img/t4.jpg" class="tour-img" alt="Wildebeest River Crossing">
+<br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 10 Days</span>
+                        <span>📍 Tanzania</span>
+                    </div>
+
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>10 Days Exclusive Serengeti Safari</h5>
+                        <p class="tour-tag">🏁 TARANGIRE, MANYARA, NGORONGORO, SERENGETI</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 tour-card-item tanzania">
+                <div class="tour-card">
+                    <img src="img/t4.jpg" class="tour-img" alt="Wildebeest River Crossing">
+<br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 10 Days</span>
+                        <span>📍 Tanzania</span>
+                    </div>
+
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>10 Days Exclusive Serengeti Safari</h5>
+                        <p class="tour-tag">🏁 TARANGIRE, MANYARA, NGORONGORO, SERENGETI</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 tour-card-item tanzania">
+                <div class="tour-card">
+                    <img src="img/t4.jpg" class="tour-img" alt="Wildebeest River Crossing">
+<br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 10 Days</span>
+                        <span>📍 Tanzania</span>
+                    </div>
+
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>10 Days Exclusive Serengeti Safari</h5>
+                        <p class="tour-tag">🏁 TARANGIRE, MANYARA, NGORONGORO, SERENGETI</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- KRUGER (EXAMPLE) -->
+            <div class="col-lg-4 col-md-6 tour-card-item kruger">
+                <div class="tour-card">
+                    <img src="img/t2.jpg" class="tour-img" alt="">
+                    <div class="tour-tag-box">
+                        <span>📅 5 Days</span>
+                        <span>📍 South Africa</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>5 Days Kruger Safari Experience</h5>
+                        <p class="tour-tag">🏁 KRUGER NATIONAL PARK</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+               <div class="col-lg-4 col-md-6 tour-card-item kruger">
+                <div class="tour-card">
+                    <img src="img/t2.jpg" class="tour-img" alt="">
+                    <div class="tour-tag-box">
+                        <span>📅 5 Days</span>
+                        <span>📍 South Africa</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>5 Days Kruger Safari Experience</h5>
+                        <p class="tour-tag">🏁 KRUGER NATIONAL PARK</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+               <div class="col-lg-4 col-md-6 tour-card-item kruger">
+                <div class="tour-card">
+                    <img src="img/t2.jpg" class="tour-img" alt="">
+                    <div class="tour-tag-box">
+                        <span>📅 5 Days</span>
+                        <span>📍 South Africa</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>5 Days Kruger Safari Experience</h5>
+                        <p class="tour-tag">🏁 KRUGER NATIONAL PARK</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GREAT MIGRATION -->
+            <div class="col-lg-4 col-md-6 tour-card-item great-migration">
+                <div class="tour-card">
+                    <img src="img/t2.jpg" class="tour-img" alt="Wildebeest River Crossing">
+<br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 10 Days</span>
+                        <span>📍 Tanzania</span>
+                    </div>
+
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>10 Days Exclusive Serengeti Safari</h5>
+                        <p class="tour-tag">🏁 TARANGIRE, MANYARA, NGORONGORO, SERENGETI</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 tour-card-item great-migration">
+                <div class="tour-card">
+                    <img src="img/t2.jpg" class="tour-img" alt="Safari Plane">
+<br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 10 Days</span>
+                        <span>📍 Tanzania</span>
+                    </div>
+
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>Serengeti Migration Safari Fly-In</h5>
+                        <p class="tour-tag">🏁 SERENGETI, NGORONGORO, MANYARA</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 tour-card-item great-migration">
+                <div class="tour-card">
+                    <img src="img/photo1.jpeg" class="tour-img" alt="Calving">
+<br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 5 Days</span>
+                        <span>📍 Tanzania</span>
+                    </div>
+
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>5 Days Wildebeest Calving Safari</h5>
+                        <p class="tour-tag">🏁 NDUTU, SERENGETI</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ZANZIBAR (PLACEHOLDER - ADD REAL CONTENT LATER) -->
+            <div class="col-lg-4 col-md-6 tour-card-item zanzibar">
+                <div class="tour-card">
+                    <img src="img/tarangire.jpg" class="tour-img" alt="">
+                    <br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 8 Days</span>
+                        <span>📍 Kilimanjaro</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>8 Days Kilimanjaro Machame Route</h5>
+                        <p class="tour-tag">🏁 MACHAME GATE – SUMMIT</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+
+                
+            </div>
+             <div class="col-lg-4 col-md-6 tour-card-item zanzibar">
+                <div class="tour-card">
+                    <img src="img/tarangire.jpg" class="tour-img" alt="">
+                    <br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 8 Days</span>
+                        <span>📍 Kilimanjaro</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>8 Days Kilimanjaro Machame Route</h5>
+                        <p class="tour-tag">🏁 MACHAME GATE – SUMMIT</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+
+                
+            </div>
+             <div class="col-lg-4 col-md-6 tour-card-item zanzibar">
+                <div class="tour-card">
+                    <img src="img/tarangire.jpg" class="tour-img" alt="">
+                    <br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 8 Days</span>
+                        <span>📍 Kilimanjaro</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>8 Days Kilimanjaro Machame Route</h5>
+                        <p class="tour-tag">🏁 MACHAME GATE – SUMMIT</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 tour-card-item kilimanjaro">
+                <div class="tour-card">
+                    <img src="img/tarangire.jpg" class="tour-img" alt="">
+                    <br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 8 Days</span>
+                        <span>📍 Kilimanjaro</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>8 Days Kilimanjaro Machame Route</h5>
+                        <p class="tour-tag">🏁 MACHAME GATE – SUMMIT</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col-lg-4 col-md-6 tour-card-item kilimanjaro">
+                <div class="tour-card">
+                    <img src="img/tarangire.jpg" class="tour-img" alt="">
+                    <br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 8 Days</span>
+                        <span>📍 Kilimanjaro</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>8 Days Kilimanjaro Machame Route</h5>
+                        <p class="tour-tag">🏁 MACHAME GATE – SUMMIT</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col-lg-4 col-md-6 tour-card-item kilimanjaro">
+                <div class="tour-card">
+                    <img src="img/tarangire.jpg" class="tour-img" alt="">
+                    <br><br>
+                    <div class="tour-tag-box">
+                        <span>📅 8 Days</span>
+                        <span>📍 Kilimanjaro</span>
+                    </div>
+                    <div class="tour-content">
+                        <div class="rating">★★★★★</div>
+                        <h5>8 Days Kilimanjaro Machame Route</h5>
+                        <p class="tour-tag">🏁 MACHAME GATE – SUMMIT</p>
+                        <div class="arrow-link">→</div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </div>
+
+        <!-- See All Tours -->
+        <div class="text-center mt-5">
+            <a href="#" class="see-all-link">
+                <span class="arrow">→</span> SEE ALL TOURS
+            </a>
+            <div class="see-all-underline"></div>
+        </div>
+
+    </div>
+</div>
+<!-- Popular Tours End -->
+
+<!-- Popular Tours End -->
+
+
+
+    <!-- Destination Start -->
+   <!-- Destinations to Inspire Start -->
+<section class="destinations-section container-xxl py-5">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <h2 class="dest-title">
+                <span class="dest-line"></span>
+                Destinations to Inspire
+            </h2>
+            <p class="dest-subtitle">
+                Embark on an extraordinary safari experience through our thoughtfully curated destinations.
+            </p>
+        </div>
+
+        <!-- TANZANIA BLOCK -->
+        <div class="row align-items-center mb-5">
+            <!-- Left Images -->
+            <div class="col-lg-6 position-relative">
+                <img src="img/tarangire.jpg" class="img-fluid rounded main-img" alt="">
+                <img src="img/simba.jpg" class="img-fluid rounded small-img shadow-lg" alt="">
+            </div>
+
+            <!-- Right Text -->
+            <div class="col-lg-6">
+                <h3 class="dest-country">Tanzania</h3>
+                <div class="dest-underline"></div>
+
+                <p class="dest-text">
+                    Experience the richness of Tanzania, where each destination tells its own captivating tale.
+                    From the expansive Serengeti to the tranquil beaches of Zanzibar, our carefully curated
+                    destinations promise unforgettable journeys filled with distinct experiences.
+                </p>
+
+                <a href="#" class="dest-btn">→ VISIT TANZANIA</a>
+            </div>
+        </div>
+
+        <!-- KENYA BLOCK -->
+        <div class="row align-items-center mb-5 flex-lg-row-reverse">
+            <!-- Right Images -->
+            <div class="col-lg-6 position-relative">
+                <img src="img/Giraffe.jpg" class="img-fluid rounded main-img" alt="">
+                <img src="img/Elephant-9.jpg" class="img-fluid rounded small-img shadow-lg" alt="">
+            </div>
+
+            <!-- Left Text -->
+            <div class="col-lg-6">
+                <h3 class="dest-country">Kenya</h3>
+                <div class="dest-underline"></div>
+
+                <p class="dest-text">
+                    Embark on Kenya’s diverse wonders — from wildlife spectacles of Maasai Mara to the
+                    culturally rich streets of Lamu. Enjoy unforgettable adventures across Kenya’s landscapes.
+                </p>
+
+                <a href="#" class="dest-btn">→ DISCOVER KENYA</a>
+            </div>
+        </div>
+
+        <!-- UGANDA BLOCK -->
+        <div class="row align-items-center">
+            <!-- Left Images -->
+            <div class="col-lg-6 position-relative">
+                <img src="img/photo1.jpeg" class="img-fluid rounded main-img" alt="">
+                <img src="img/photo1.jpeg" class="img-fluid rounded small-img shadow-lg" alt="">
+            </div>
+
+            <!-- Right Text -->
+            <div class="col-lg-6">
+                <h3 class="dest-country">Uganda</h3>
+                <div class="dest-underline"></div>
+
+                <p class="dest-text">
+                    Discover Uganda’s enchanting landscapes — from gorilla encounters to the serene beauty of Lake Victoria.
+                    A destination full of cultural richness and unmatched adventure.
+                </p>
+
+                <a href="#" class="dest-btn">→ SEE UGANDA</a>
+            </div>
+        </div>
+
+         <!-- KENYA BLOCK -->
+        <div class="row align-items-center mb-5 flex-lg-row-reverse">
+            <!-- Right Images -->
+            <div class="col-lg-6 position-relative">
+                <img src="img/Giraffe.jpg" class="img-fluid rounded main-img" alt="">
+                <img src="img/Nyumbu6.jpg" class="img-fluid rounded small-img shadow-lg" alt="">
+            </div>
+
+            <!-- Left Text -->
+            <div class="col-lg-6">
+                <h3 class="dest-country">Rwanda</h3>
+                <div class="dest-underline"></div>
+
+                <p class="dest-text">
+                    Embark on Kenya’s diverse wonders — from wildlife spectacles of Maasai Mara to the
+                    culturally rich streets of Lamu. Enjoy unforgettable adventures across Kenya’s landscapes.
+                </p>
+
+                <a href="#" class="dest-btn">→ DISCOVER RANDA</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+<!-- Destinations to Inspire End -->
+
+    <!-- Destination Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        
+        <div class="text-center wow fadeInUp mb-5" data-wow-delay="0.1s">
+            <h1 class="experience-title">Explore handpicked experiences</h1>
+            <p class="experience-subtitle">
+                Our selection offers serene beaches, wildlife encounters, invigorating hikes, and family-friendly getaways.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-lg-6">
+                <div class="experience-card large-card" style="background-image: url('img/beach.jpg');">
+                    <div class="card-content">
+                        <h3>Beaches</h3>
+                        <p>Experience the allure of our meticulously selected beaches. With pristine sands and azure waters</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    
+                    <div class="col-sm-6">
+                        <div class="experience-card small-card" style="background-image: url('img/tembo3.jpg');">
+                             <div class="card-content">
+                                <h3>Big Five</h3>
+                                <p>Encounter Africa's legendary Big Five – lions, elephants, buffaloes, leopards, and rhinoceros</p>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="experience-card small-card" style="background-image: url('img/mount.jpg');">
+                            <div class="card-content">
+                                <h3>Hiking</h3>
+                                <p>Enhance your African tour with invigorating hikes. Traverse scenic landscapes, breathe in fresh mountain.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="experience-card small-card" style="background-image: url('img/Zebra-4.jpg');">
+                            <div class="card-content">
+                                <h3>Great Migration</h3>
+                                <p>An annual natural marvel where vast herds of wildebeest and zebras traverse the Serengeti-Mara</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="experience-card small-card" style="background-image: url('img/Viewpoint.jpg');">
+                            <div class="card-content">
+                                <h3>Child Friendly</h3>
+                                <p>Our tours are thoughtfully crafted with your little explorers in mind. From engaging activities</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- Package Start (Now Destinations to Inspire) -->
+<!-- Destinations to Inspire -->
+<!-- Destinations to Inspire Start -->
+<section class="container-xxl py-5">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" style="font-size:48px;">Destinations to Inspire</h2>
+            <p style="max-width:700px;margin:0 auto;font-size:18px;color:#444;">
+                Extend your African exploration with our related articles. Immerse yourself in captivating destinations 
+                and vibrant cultures for a fuller understanding.
+            </p>
+        </div>
+
+        <!-- Bootstrap Carousel -->
+        <div id="destinationsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shadow-sm" style="border-radius:10px; overflow:hidden;">
+                                <img src="img/ngoro22.jpeg" class="img-fluid" alt="">
+                                <div class="p-3">
+                                    <h5 class="fw-bold">
+                                        Serengeti vs Maasai Mara vs Kruger: Comparing Africa’s Top Safari Destinations
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shadow-sm" style="border-radius:10px; overflow:hidden;">
+                                <img src="img/tarangire.jpg" class="img-fluid" alt="">
+                                <div class="p-3">
+                                    <h5 class="fw-bold">
+                                        10 Reasons to Book a Low-Season Safari in Tanzania (That Most Travelers Miss)
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shadow-sm" style="border-radius:10px; overflow:hidden;">
+                                <img src="img/Elephant-9.jpg" class="img-fluid" alt="">
+                                <div class="p-3">
+                                    <h5 class="fw-bold">
+                                        Pros and Cons of Booking Locally vs. Through Your Country’s Travel Agent
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 (Duplicate content or add more articles) -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shadow-sm" style="border-radius:10px; overflow:hidden;">
+                                <img src="img/twiga.jpg" class="img-fluid" alt="">
+                                <div class="p-3">
+                                    <h5 class="fw-bold">  10 Reasons to Book a Low-Season Safari in Tanzania (That Most Travelers Miss).</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shadow-sm" style="border-radius:10px; overflow:hidden;">
+                                <img src="img/Elephant-9.jpg" class="img-fluid" alt="">
+                                <div class="p-3">
+                                    <h5 class="fw-bold">  Pros and Cons of Booking Locally vs. Through Your Country’s Travel Agent</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="shadow-sm" style="border-radius:10px; overflow:hidden;">
+                                <img src="img/t4.jpg" class="img-fluid" alt="">
+                                <div class="p-3">
+                                    <h5 class="fw-bold">  Pros and Cons of Booking Locally vs. Through Your Country’s Travel Agent</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls (Arrows Left & Right) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="prev"
+                style="width:40px; height:40px; top:50%; transform:translateY(-50%); left:-50px;">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="next"
+                style="width:40px; height:40px; top:50%; transform:translateY(-50%); right:-50px;">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+<!-- Destinations to Inspire End -->
+
+<!-- Destinations to Inspire End -->
+<!-- Why Travel With Us Start -->
+<section class="py-5" 
+style="
+    background-image: url('img/car1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top:100px;
+    padding-bottom:120px;
+">
+
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="mb-5">
+            <h2 class="fw-bold" style="font-size:42px;">
+                <span style="border-left:5px solid #d4a017; padding-left:15px;">Why Travel With Us?</span>
+            </h2>
+            <p style="font-size:18px; max-width:650px; color:#333;">
+                Discover authentic Africa with Gosheni Safaris – where every journey is
+                crafted with passion and expertise.
+            </p>
+        </div>
+
+        <!-- Icon Grid -->
+        <div class="row gy-4">
+
+            <!-- Item 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <div style="font-size:36px; margin-right:15px;">
+                        <i class="fa fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Professional Guide</h5>
+                        <p class="mb-0">
+                            Embark on a seamless adventure with our knowledgeable and professional guides,
+                            ensuring an enriching travel experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <div style="font-size:36px; margin-right:15px;">
+                        <i class="fa fa-language"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Local Expertise</h5>
+                        <p class="mb-0">
+                            As a local company, we offer an authentic perspective, unlocking hidden gems and
+                            cultural insights for a truly immersive journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <div style="font-size:36px; margin-right:15px;">
+                        <i class="fa fa-truck-monster"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Exclusive Vehicles</h5>
+                        <p class="mb-0">
+                            Travel in comfort and style with our dedicated vehicles, providing flexibility
+                            and convenience throughout your exploration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <div style="font-size:36px; margin-right:15px;">
+                        <i class="fa fa-award"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Expertise and Experience</h5>
+                        <p class="mb-0">
+                            Benefit from our extensive expertise and years of experience, ensuring a
+                            well-planned and smoothly executed travel itinerary.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <div style="font-size:36px; margin-right:15px;">
+                        <i class="fa fa-compass"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Tailored Customization</h5>
+                        <p class="mb-0">
+                            Your journey, your way. Experience the freedom to customize your adventure,
+                            ensuring it aligns perfectly with your preferences and desires.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <div style="font-size:36px; margin-right:15px;">
+                        <i class="fa fa-globe-africa"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Variety of Destinations</h5>
+                        <p class="mb-0">
+                            Explore diverse landscapes and cultures with our extensive range of destinations,
+                            offering a rich tapestry of experiences tailored to your travel aspirations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Why Travel With Us End -->
+
+
+    <!-- Package Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5">Awesome Packages</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/package-1.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Thailand</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$149.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/package-2.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Indonesia</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$139.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/package-3.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Malaysia</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$189.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Package End -->
+
+
+    <!-- Booking Start -->
+    <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Book A Tour</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="select1">
+                                            <option value="1">Destination 1</option>
+                                            <option value="2">Destination 2</option>
+                                            <option value="3">Destination 3</option>
+                                        </select>
+                                        <label for="select1">Destination</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Booking Start -->
+
+
+    <!-- Process Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Destination</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Fly Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Process Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Out Team</h6>
+                <h1 class="mb-5">Meet Our Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/pro1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/pro4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/pro5.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/pro1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>New York, USA</p>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>New York, USA</p>
+                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>New York, USA</p>
+                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>New York, USA</p>
+                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <!-- Awards Section (Auto Scrolling) -->
+<section class="py-5" style="background:#fff;">
+    <div class="container text-center mb-4">
+        <h2 class="fw-bold" style="font-size:40px;">
+            <span style="border-left:5px solid #d4a017; padding-left:15px;">Awards</span>
+        </h2>
+    </div>
+
+    <div class="awards-slider">
+        <div class="awards-track">
+            <img src="img/logo.png" alt="Awards" class="award-img">
+            <img src="img/logo.png" alt="Awards" class="award-img">
+             <img src="img/logo.png" alt="Awards" class="award-img">
+            <img src="img/logo.png" alt="Awards" class="award-img">
+             <img src="img/logo.png" alt="Awards" class="award-img">
+            <img src="img/logo.png" alt="Awards" class="award-img">
+             <img src="img/logo.png" alt="Awards" class="award-img">
+            <img src="img/logo.png" alt="Awards" class="award-img">
+            
+        </div>
+    </div>
+</section>
+
+<style>
+.awards-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.awards-track {
+    display: inline-flex;
+    gap: 80px;
+    animation: scrollAwards 30s linear infinite;
+}
+
+.award-img {
+    height: 110px;
+    object-fit: contain;
+}
+
+@keyframes scrollAwards {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+</style>
+
+<!-- Divider Line -->
+<hr style="border-top:1px solid #ccc; margin:40px auto; width:90%;">
+
+
+<!-- FOOTER START -->
+<footer class="pt-5" style="background:#fff; color:#000;">
+
+    <div class="container">
+
+        <!-- TOP ROW LINKS -->
+        <div class="row gy-4">
+
+            <!-- About -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">About Gosheni</h5>
+                <ul class="list-unstyled footer-list">
+                    <li><a href="#">Why Book with Gosheni</a></li>
+                    <li><a href="#">Our Guides</a></li>
+                    <li><a href="#">Our Vehicles</a></li>
+                    <li><a href="#">See All Tours</a></li>
+                    <li><a href="#">Gosheni Foundation</a></li>
+                    <li><a href="#">Gosheni DMC Tanzania</a></li>
+                </ul>
+                <!-- <img src="img/logo.png" style="width:160px; margin-top:10px;"> -->
+            </div>
+
+            <!-- Destinations -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">Top Destinations</h5>
+                <ul class="list-unstyled footer-list">
+                    <li><a href="#">Tanzania</a></li>
+                    <li><a href="#">Kenya</a></li>
+                    <li><a href="#">Uganda</a></li>
+                    <li><a href="#">Rwanda</a></li>
+                    <li><a href="#">South Africa</a></li>
+                </ul>
+            </div>
+
+            <!-- Experiences -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">Top Experiences</h5>
+                <ul class="list-unstyled footer-list">
+                    <li><a href="#">Tanzania Safari</a></li>
+                    <li><a href="#">Great Migration</a></li>
+                    <li><a href="#">Zanzibar</a></li>
+                    <li><a href="#">Mt. Kilimanjaro</a></li>
+                </ul>
+            </div>
+
+            <!-- Booking Resource -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">Booking Resource</h5>
+                <ul class="list-unstyled footer-list">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Payment and Terms</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Information -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">Useful Information</h5>
+                <ul class="list-unstyled footer-list">
+                    <li><a href="#">Health Entry Details TZ</a></li>
+                    <li><a href="#">Safari Packing List</a></li>
+                    <li><a href="#">Pack for Kilimanjaro</a></li>
+                    <li><a href="#">Visa to Tanzania</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">Sign up for the Newsletter</h5>
+                <form class="newsletter-form">
+                    <input type="email" class="form-control mb-2" placeholder="Email">
+                    <button class="btn w-100" 
+                        style="background:#d4a017; color:#fff; font-weight:bold;">SUBSCRIBE</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- CONTACT ROW -->
+        <div class="row mt-5 gy-4">
+
+            <!-- Contact -->
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-3">Contact</h5>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Arusha – Nairobi Road Sakina kwa Idd House no. 80 P.O Box 7337 Arusha, Tanzania</p>
+            </div>
+
+            <!-- Traveler Assistance -->
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-3">Traveler Assistance</h5>
+                <p><i class="fa fa-phone me-2"></i>+255 715 636 967 (EAT – UTC +3)</p>
+                <p><i class="fa fa-phone me-2"></i>+256 767 828 384 (EAT – UTC +3)</p>
+                <p><i class="fa fa-phone me-2"></i>+255 753 090 908 (PHT – UTC +8)</p>
+                <p><i class="fa fa-envelope me-2"></i>info@goshenisafaris.com</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-3">Follow Us</h5>
+                <div class="d-flex gap-3 fs-4">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 py-3" style="color:#777;">
+            © 2025 Gosheni Safaris — All Rights Reserved
+        </div>
+
+    </div>
+</footer>
+
+<style>
+.footer-list li { margin-bottom: 8px; }
+.footer-list a { color:#000; text-decoration:none; }
+.footer-list a:hover { text-decoration:underline; }
+</style>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const filterLinks = document.querySelectorAll('.filter-link');
+    const tourCards = document.querySelectorAll('.tour-card-item');
+
+    function filterTours(filter) {
+        tourCards.forEach(card => {
+            if (filter === 'all' || card.classList.contains(filter)) {
+                card.classList.add('show');
+            } else {
+                card.classList.remove('show');
+            }
+        });
+    }
+
+    filterLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+
+            filterLinks.forEach(l => l.classList.remove('active-filter'));
+            link.classList.add('active-filter');
+
+            const filterValue = link.getAttribute('data-filter');
+            filterTours(filterValue);
+        });
+    });
+
+    // Automatically load Tanzania tab as default
+    const defaultFilter = 'tanzania';
+    filterLinks.forEach(link => {
+        if (link.getAttribute('data-filter') === defaultFilter) {
+            link.classList.add('active-filter');
+        } else {
+            link.classList.remove('active-filter');
+        }
+    });
+    filterTours(defaultFilter);
+});
+
+
+
+function scrollContent(direction) {
+    const container = document.getElementById("article-scroll-container");
+    const cardWidth = 300; // adjust based on card size
+    container.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+}
+
+document.getElementById("scroll-left").onclick = () => scrollContent(-1);
+document.getElementById("scroll-right").onclick = () => scrollContent(1);
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
