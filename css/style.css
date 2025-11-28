@@ -474,23 +474,33 @@
 }
 
 
-@media (min-width: 992px) {
-    .dropdown-mega .dropdown-menu {
-        /* CRITICAL for alignment */
-        left: 400px; 
-        transform: none; 
-        
-        /* The inline style will override this width, but keep it as a fallback */
-        width: 700px; 
-    }
-    
-    .dropdown-mega:hover .dropdown-menu {
-        /* CRITICAL for hover activation */
-        display: block;
-        margin-top: 0; 
-        animation: fadeIn 0.3s forwards;
-    }
+/* UNIVERSAL MEGA MENU POSITION */
+.dropdown-mega .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
+    margin-top: 0 !important;
+    border-radius: 0 0 12px 12px;
+    border: none;
+    padding: 30px !important;
+    position: absolute !important;
 }
+
+/* WIDTH CONSISTENCY */
+.dropdown-mega .dropdown-menu {
+    width: 700px !important; /* adjust if needed */
+}
+
+/* REMOVE BOOTSTRAP AUTO POSITIONING */
+.dropdown-mega {
+    position: static !important;
+}
+
+/* MAKE DROPDOWN ALWAYS OVER EVERYTHING */
+.dropdown-menu {
+    z-index: 9999 !important;
+}
+
 .view-tours-link {
     font-weight: 700;
     font-size: 18px;
