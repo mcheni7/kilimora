@@ -494,6 +494,31 @@
 .dropdown-mega {
     position: static !important;
 }
+/* MOBILE FIX FOR MEGA MENU */
+@media (max-width: 991px) {  /* applies on screens smaller than lg */
+    
+    /* Make mega menu full width */
+    .dropdown-mega .dropdown-menu {
+        width: 100% !important;
+        min-width: 100% !important;
+        left: 0 !important;
+        transform: none !important;
+        padding: 15px !important;
+        border-radius: 0 0 12px 12px;
+    }
+
+    /* Stack columns vertically on mobile */
+    .dropdown-mega .dropdown-menu .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Optional: center images */
+    .dropdown-mega .dropdown-menu img {
+        margin: 0 auto;
+    }
+}
+
 
 
 .view-tours-link {
