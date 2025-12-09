@@ -99,15 +99,15 @@
                                     <h5 class="mb-3 text-primary">Destinations</h5>
                                     <a href="destination-serengeti.html" class="dropdown-item mb-2"><i
                                             class="fa fa-map-marker-alt text-primary me-2"></i>Serengeti</a>
-                                    <a href="destination-kenya.html" class="dropdown-item mb-2"><i
+                                    <a href="destination-ngorongoro.html" class="dropdown-item mb-2"><i
                                             class="fa fa-map-marker-alt text-primary me-2"></i>Ngorongoro</a>
-                                    <a href="destination-uganda.html" class="dropdown-item mb-2"><i
+                                    <a href="destination-kilimanjaro.html" class="dropdown-item mb-2"><i
                                             class="fa fa-map-marker-alt text-primary me-2"></i>Mount Kilimanjaro</a>
-                                    <a href="destination-rwanda.html" class="dropdown-item mb-2"><i
+                                    <a href="destination-terangile.html" class="dropdown-item mb-2"><i
                                             class="fa fa-map-marker-alt text-primary me-2"></i>Tarangire</a>
-                                    <a href="destination-southafrica.html" class="dropdown-item"><i
+                                    <a href="destination-manyara.html" class="dropdown-item"><i
                                             class="fa fa-map-marker-alt text-primary me-2"></i>Lake Manyara</a>
-                                    <a href="destination-southafrica.html" class="dropdown-item"><i
+                                    <a href="destination-mikumi.html" class="dropdown-item"><i
                                             class="fa fa-map-marker-alt text-primary me-2"></i>Mikumi</a>
                                 </div>
 
@@ -197,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="nav-item nav-link">About</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
                     <!-- <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="package.html" class="nav-item nav-link">Packages</a> -->
                     <a href="#" class="nav-item nav-link">Contact</a>
@@ -1413,6 +1413,7 @@
 
         <div class="awards-slider">
             <div class="awards-track">
+                <!-- Original Set -->
                 <img src="img/logo.png" alt="Awards" class="award-img">
                 <img src="img/logo.png" alt="Awards" class="award-img">
                 <img src="img/logo.png" alt="Awards" class="award-img">
@@ -1422,6 +1423,15 @@
                 <img src="img/logo.png" alt="Awards" class="award-img">
                 <img src="img/logo.png" alt="Awards" class="award-img">
 
+                <!-- Duplicate Set for Seamless Loop -->
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
+                <img src="img/logo.png" alt="Awards" class="award-img">
             </div>
         </div>
     </section>
@@ -1432,17 +1442,49 @@
             white-space: nowrap;
             position: relative;
             width: 100%;
+            /* Optional: Add background color or padding if needed */
+        }
+
+        /* Fade effects on edges */
+        .awards-slider::before,
+        .awards-slider::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 150px;
+            /* Width of the fade */
+            height: 100%;
+            z-index: 2;
+        }
+
+        .awards-slider::before {
+            left: 0;
+            background: linear-gradient(to right, white, transparent);
+        }
+
+        .awards-slider::after {
+            right: 0;
+            background: linear-gradient(to left, white, transparent);
         }
 
         .awards-track {
             display: inline-flex;
             gap: 80px;
-            animation: scrollAwards 30s linear infinite;
+            /* Space between logos */
+            animation: scrollAwards 40s linear infinite;
+            /* Increased time for smoother slow scroll */
+        }
+
+        /* Pause animation on hover */
+        .awards-slider:hover .awards-track {
+            animation-play-state: paused;
         }
 
         .award-img {
             height: 110px;
             object-fit: contain;
+            flex-shrink: 0;
+            /* Prevent shrinking */
         }
 
         @keyframes scrollAwards {
@@ -1451,6 +1493,7 @@
             }
 
             100% {
+                /* Move by half the width of the track (since we duplicated the content) */
                 transform: translateX(-50%);
             }
         }
