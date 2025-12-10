@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4B2E18; /* Tembea Africa logo brown */
+    --primary: #4B2E18;
+    /* Tembea Africa logo brown */
     --secondary: #4B2E18;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -172,7 +173,7 @@
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
@@ -203,13 +204,13 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/ngoro22.jpeg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/simba3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
 
@@ -356,6 +357,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -363,6 +365,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -472,6 +475,7 @@
     padding-right: 0;
     border-right: none;
 }
+
 /* UNIVERSAL MEGA MENU POSITION */
 .dropdown-mega .dropdown-menu {
     position: absolute !important;
@@ -485,18 +489,23 @@
     z-index: 9999 !important;
 
     /* RESPONSIVE WIDTH */
-    width: 80vw !important;        /* takes 80% of screen */
-    max-width: 700px !important;   /* never bigger than 700px */
-    min-width: 320px !important;   /* safe on very small screens */
+    width: 80vw !important;
+    /* takes 80% of screen */
+    max-width: 700px !important;
+    /* never bigger than 700px */
+    min-width: 320px !important;
+    /* safe on very small screens */
 }
 
 /* REMOVE BOOTSTRAP AUTO POSITIONING */
 .dropdown-mega {
     position: static !important;
 }
+
 /* MOBILE FIX FOR MEGA MENU */
-@media (max-width: 991px) {  /* applies on screens smaller than lg */
-    
+@media (max-width: 991px) {
+    /* applies on screens smaller than lg */
+
     /* Make mega menu full width */
     .dropdown-mega .dropdown-menu {
         width: 100% !important;
@@ -538,9 +547,10 @@
 }
 
 .view-tours-underline {
-    width: 200px; 
+    width: 200px;
     height: 2px;
-    background-color: #C89F6C; /* gold color like the screenshot */
+    background-color: #C89F6C;
+    /* gold color like the screenshot */
     margin-top: 10px;
 }
 
@@ -582,7 +592,7 @@
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 }
 
 .tour-img {
@@ -597,7 +607,7 @@
     width: 85%;
     padding: 10px 15px;
     border-radius: 6px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -652,20 +662,27 @@
 
 /* CSS to handle the filtering animation/display */
 .tour-card-item {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     /* Add a smooth transition for fade-in/out */
     transition: opacity 0.5s ease;
 }
 
 .tour-card-item.show {
-    display: block; /* Shown when the filter is active */
+    display: block;
+    /* Shown when the filter is active */
     animation: fadeIn 0.5s forwards;
 }
 
 /* Optional: Keyframe for a smooth fade-in */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .tour-card-item {
@@ -683,6 +700,7 @@
     color: #d4a017;
     border-bottom: 2px solid #d4a017;
 }
+
 .dest-title {
     font-size: 38px;
     font-weight: 700;
@@ -766,7 +784,8 @@
 .experience-title {
     font-size: 42px;
     font-weight: 800;
-    color: #000; /* Assuming black text for the main heading */
+    color: #000;
+    /* Assuming black text for the main heading */
 }
 
 .experience-subtitle {
@@ -778,7 +797,8 @@
 /* Base Card Styles */
 .experience-card {
     height: 100%;
-    min-height: 280px; /* Base height for small cards */
+    min-height: 280px;
+    /* Base height for small cards */
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -811,8 +831,10 @@
     bottom: 0;
     left: 0;
     padding: 20px;
-    color: white; /* White text over the dark overlay */
-    z-index: 2; /* Must be above the ::after overlay */
+    color: white;
+    /* White text over the dark overlay */
+    z-index: 2;
+    /* Must be above the ::after overlay */
 }
 
 .card-content h3 {
@@ -829,9 +851,6 @@
 
 /* Specific Height for the Large Card (Beaches) */
 .large-card {
-    min-height: 576px; /* Calculation: two small cards (280px * 2) + 16px gutter */
+    min-height: 576px;
+    /* Calculation: two small cards (280px * 2) + 16px gutter */
 }
-
-
-
-
