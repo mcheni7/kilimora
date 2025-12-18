@@ -204,7 +204,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/simba3.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/Simba-7.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -489,10 +489,10 @@
     z-index: 9999 !important;
 
     /* RESPONSIVE WIDTH */
-    width: 80vw !important;
-    /* takes 80% of screen */
-    max-width: 700px !important;
-    /* never bigger than 700px */
+    width: 90vw !important;
+    /* takes 90% of screen */
+    max-width: 850px !important;
+    /* increased from 700px */
     min-width: 320px !important;
     /* safe on very small screens */
 }
@@ -526,6 +526,12 @@
     .dropdown-mega .dropdown-menu img {
         margin: 0 auto;
     }
+}
+
+/* Add spacing for the destination list */
+.dropdown-mega .dropdown-menu .border-end {
+    padding-right: 120px !important;
+    padding-left: 60px !important;
 }
 
 
