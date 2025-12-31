@@ -281,7 +281,7 @@
                     <a href="#" class="nav-item nav-link">About</a>
                     <!-- <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="package.html" class="nav-item nav-link">Packages</a> -->
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <!-- <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a> -->
             </div>
@@ -311,8 +311,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/chui2.jpg" alt=""
-                            style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100 about-image-animated" src="img/chui2.jpg"
+                            alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -808,6 +808,53 @@
 
             100% {
                 transform: translateX(-50%);
+            }
+        }
+
+        /* About Image Animation Styles */
+        .about-image-animated {
+            animation: fadeInScale 1.2s ease-out forwards, floatImage 6s ease-in-out 1.2s infinite;
+            transform-origin: center;
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes floatImage {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-10px) scale(1.02);
+            }
+        }
+
+        /* Hover effect for about image */
+        .about-image-animated:hover {
+            animation: fadeInScale 1.2s ease-out forwards, floatImageHover 0.8s ease-in-out infinite;
+        }
+
+        @keyframes floatImageHover {
+
+            0%,
+            100% {
+                transform: translateY(-5px) scale(1.02);
+            }
+
+            50% {
+                transform: translateY(-15px) scale(1.05);
             }
         }
     </style>
