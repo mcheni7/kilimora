@@ -860,3 +860,64 @@
     min-height: 576px;
     /* Calculation: two small cards (280px * 2) + 16px gutter */
 }
+
+/* --- Diana Profile & Read More Styles --- */
+
+/* Read More Link (Team Card) */
+.team-read-more {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.team-read-more:hover {
+    color: #d4a017;
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(212, 160, 23, 0.3);
+}
+
+.team-read-more::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d4a017;
+    transition: width 0.3s ease;
+}
+
+.team-read-more:hover::after {
+    width: 100%;
+}
+
+/* Detailed Profile Styles */
+.diana-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.diana-img-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.diana-img-container img {
+    transition: transform 0.5s ease;
+}
+
+.diana-img-container:hover img {
+    transform: scale(1.03);
+}
+
+/* Smooth Scroll adjustments */
+html {
+    scroll-behavior: smooth;
+}

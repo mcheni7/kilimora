@@ -25,25 +25,64 @@ for filename in html_files:
         
         original_content = content
         
-        # Update Facebook links - look for href="" followed by fa-facebook icon
+        # 1. Inject TikTok link in Top Bar if missing
+        # We look for the Instagram button in the top bar style and append TikTok after it
+        # Pattern matches the Instagram button with specific classes used in the top bar
+        # We use a negative lookahead to ensure we don't add it if it's already there (checking for fa-tiktok immediately after)
+        
+        topbar_tiktok_btn = f'<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="{TIKTOK_URL}"><i class="fab fa-tiktok fw-normal"></i></a>'
+        
+        # Regex to find Instagram button in Top Bar
+        # Expected format: <a class="..." href=""><i class="fab fa-instagram fw-normal"></i></a>
+        # We capture the whole Instagram anchor tag
+        instagram_btn_pattern = r'(<a\s+class="[^"]*btn-outline-light[^"]*"\s+href="[^"]*"><i\s+class="[^"]*fab fa-instagram[^"]*"></i></a>)'
+        
+        def inject_tiktok(match):
+            full_match = match.group(0)
+            # Check context after the match to see if TikTok is already their (heuristically)
+            # This check happens on the string during replacement but re.sub processes sequentially.
+            # However, simpler to just rely on the fact that we run this once or check content first.
+            # But to be safe against re-runs, we can use a callback.
+            
+            # The callback replaces the match. We want to return match + tiktok if tiktok not present.
+            # But the lookahead in regex is cleaner.
+            return full_match
+        
+        # Regex with negative lookahead to prevent duplicate injection
+        # Matches Instagram button NOT followed by whitespace* + <a ... fa-tiktok
+        injection_pattern = instagram_btn_pattern + r'(?!\s*<a[^>]*><i[^>]*class="[^"]*fab fa-tiktok)'
+        
         content = re.sub(
-            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-facebook)',
+            injection_pattern,
+            r'\1\n                    ' + topbar_tiktok_btn,
+            content,
+            flags=re.IGNORECASE
+        )
+
+        # 2. Update existing links (Facebook, Instagram, TikTok) in the whole file (TopBar + Footer)
+        
+        # Update Facebook links (handling both fa-facebook and fa-facebook-f)
+        content = re.sub(
+            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-facebook(?:-f)?\b)',
             r'\1' + FACEBOOK_URL + r'\2',
-            content
+            content,
+            flags=re.IGNORECASE
         )
         
         # Update Instagram links
         content = re.sub(
-            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-instagram)',
+            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-instagram\b)',
             r'\1' + INSTAGRAM_URL + r'\2',
-            content
+            content,
+            flags=re.IGNORECASE
         )
         
-        # Update TikTok links
+        # Update TikTok links (if any existing ones, e.g. in footer)
         content = re.sub(
-            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-tiktok)',
+            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-tiktok\b)',
             r'\1' + TIKTOK_URL + r'\2',
-            content
+            content,
+            flags=re.IGNORECASE
         )
         
         # Write back if changes were made
