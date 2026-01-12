@@ -334,10 +334,11 @@ def restore_file(filename, data):
     # 5. Tours
     new_content = new_content.replace('Experience Serengeti\'s Top Tours', data['tours_title'])
     t_imgs = data['tour_images']
-    new_content = re.sub(r'(<!-- Tour Item 1 -->.*?<img class="img-fluid" src=")img/[^"]+(")', f'\\1img/{t_imgs[0]}\\2', new_content, flags=re.DOTALL)
-    new_content = re.sub(r'(<!-- Tour Item 2 -->.*?<img class="img-fluid" src=")img/[^"]+(")', f'\\1img/{t_imgs[1]}\\2', new_content, flags=re.DOTALL)
-    new_content = re.sub(r'(<!-- Tour Item 3 -->.*?<img class="img-fluid" src=")img/[^"]+(")', f'\\1img/{t_imgs[2]}\\2', new_content, flags=re.DOTALL)
-    new_content = re.sub(r'(<!-- Tour Item 4 -->.*?<img class="img-fluid" src=")img/[^"]+(")', f'\\1img/{t_imgs[3]}\\2', new_content, flags=re.DOTALL)
+    # Updated regex to match new 'img-fluid tour-img' class
+    new_content = re.sub(r'(<!-- Tour Item 1 -->.*?<img class="img-fluid tour-img" src=")img/[^"]+(")', f'\\1img/{t_imgs[0]}\\2', new_content, flags=re.DOTALL)
+    new_content = re.sub(r'(<!-- Tour Item 2 -->.*?<img class="img-fluid tour-img" src=")img/[^"]+(")', f'\\1img/{t_imgs[1]}\\2', new_content, flags=re.DOTALL)
+    new_content = re.sub(r'(<!-- Tour Item 3 -->.*?<img class="img-fluid tour-img" src=")img/[^"]+(")', f'\\1img/{t_imgs[2]}\\2', new_content, flags=re.DOTALL)
+    new_content = re.sub(r'(<!-- Tour Item 4 -->.*?<img class="img-fluid tour-img" src=")img/[^"]+(")', f'\\1img/{t_imgs[3]}\\2', new_content, flags=re.DOTALL)
 
     # 6. Nearby Destinations
     # Replace the descriptive text

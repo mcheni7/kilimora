@@ -1,17 +1,13 @@
 import os
 
 # Configuration
-# Old Colors
-OLD_PRIMARY = '#4B2E18'
-OLD_SECONDARY = '#4B2E18' # Same as primary in root
-OLD_GOLD = '#d4a017'
-OLD_GOLD_2 = '#c9a24b' # Found in style.css
-OLD_GOLD_3 = '#C89F6C' # Found in rating/underline
-OLD_DARK_BROWN = '#3A2413' # Hover state
+# Current Colors (To be replaced)
+CURRENT_GREEN = '#78B438'
+CURRENT_DARK_GREEN = '#5A8F24'
 
-# New Colors
-NEW_GREEN = '#78B438'
-NEW_DARK_GREEN = '#5A8F24' # Approx 20% darker
+# Target Colors (Restoring)
+TARGET_BROWN = '#4B2E18'
+TARGET_DARK_BROWN = '#3A2413'
 
 TARGET_DIR = 'd:\\website template\\kilimora'
 
@@ -22,29 +18,19 @@ def update_colors(filepath):
         
         original_content = content
         
-        # Replace Primary/Secondary/Gold with NEW_GREEN
-        content = content.replace(OLD_PRIMARY, NEW_GREEN)
-        content = content.replace(OLD_SECONDARY, NEW_GREEN)
-        content = content.replace(OLD_GOLD, NEW_GREEN)
-        content = content.replace(OLD_GOLD_2, NEW_GREEN)
-        content = content.replace(OLD_GOLD_3, NEW_GREEN)
+        # Replace Green with Brown
+        content = content.replace(CURRENT_GREEN, TARGET_BROWN)
+        content = content.replace(CURRENT_GREEN.lower(), TARGET_BROWN)
         
-        # Replace Dark Brown (Hover) with NEW_DARK_GREEN
-        content = content.replace(OLD_DARK_BROWN, NEW_DARK_GREEN)
-        
-        # Also handle lowercase variants just in case
-        content = content.replace(OLD_PRIMARY.lower(), NEW_GREEN)
-        content = content.replace(OLD_GOLD.lower(), NEW_GREEN)
-        content = content.replace(OLD_GOLD_2.lower(), NEW_GREEN)
-        content = content.replace(OLD_GOLD_3.lower(), NEW_GREEN)
-        content = content.replace(OLD_DARK_BROWN.lower(), NEW_DARK_GREEN)
+        # Replace Dark Green with Dark Brown
+        content = content.replace(CURRENT_DARK_GREEN, TARGET_DARK_BROWN)
+        content = content.replace(CURRENT_DARK_GREEN.lower(), TARGET_DARK_BROWN)
 
         if content != original_content:
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
-            print(f"[UPDATED] {os.path.basename(filepath)}")
+            print(f"[REVERTED] {os.path.basename(filepath)}")
         else:
-            # print(f"[SKIP] {os.path.basename(filepath)}")
             pass
 
     except Exception as e:
