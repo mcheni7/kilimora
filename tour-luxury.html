@@ -615,7 +615,108 @@
         </div>
     </div>
 
-    <!-- Footer Start -->
+        <!-- Footer Start -->
+    <!-- Awards Section (Auto Scrolling) -->
+    <section class="py-5" style="background:#fff;">
+        <div class="container text-center mb-4">
+            <h2 class="fw-bold" style="font-size:40px;">
+                <span style="border-left:5px solid #d4a017; padding-left:15px;">Awards</span>
+            </h2>
+        </div>
+
+        <div class="awards-slider">
+            <div class="awards-track">
+                <!-- Original Set -->
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+
+                <!-- Duplicate Set for Seamless Loop -->
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+                <img src="img/logo1.png" alt="Awards" class="award-img">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .awards-slider {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            /* Optional: Add background color or padding if needed */
+        }
+
+        /* Fade effects on edges */
+        .awards-slider::before,
+        .awards-slider::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 150px;
+            /* Width of the fade */
+            height: 100%;
+            z-index: 2;
+        }
+
+        .awards-slider::before {
+            left: 0;
+            background: linear-gradient(to right, white, transparent);
+        }
+
+        .awards-slider::after {
+            right: 0;
+            background: linear-gradient(to left, white, transparent);
+        }
+
+        .awards-track {
+            display: inline-flex;
+            gap: 80px;
+            /* Space between logos */
+            animation: scrollAwards 40s linear infinite;
+            /* Increased time for smoother slow scroll */
+        }
+
+        /* Pause animation on hover */
+        .awards-slider:hover .awards-track {
+            animation-play-state: paused;
+        }
+
+        .award-img {
+            height: 110px;
+            object-fit: contain;
+            flex-shrink: 0;
+            /* Prevent shrinking */
+        }
+
+        @keyframes scrollAwards {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                /* Move by half the width of the track (since we duplicated the content) */
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+
+    <!-- Divider Line -->
+    <hr style="border-top:1px solid #ccc; margin:40px auto; width:90%;">
+
+
+    <!-- FOOTER START -->
     <footer class="pt-5" style="background:#fff; color:#000;">
 
         <div class="container">
@@ -702,28 +803,33 @@
                 <!-- Contact -->
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3">Contact</h5>
-                    <p><i class="fa fa-map-marker-alt me-2"></i>Arusha â€“ Nairobi Road Sakina kwa Idd House no. 80 P.O
-                        Box 7337 Arusha, Tanzania</p>
+                    <p><i class="fa fa-map-marker-alt me-2"></i>Location: Usariver, Arusha,Tanzania</p>
+                    <p><i class="fa fa-road me-2"></i>Street/Road: Mandela Road</p>
+                    <p><i class="fa fa-landmark me-2"></i>Landmark: Near Kennedy House</p>
                 </div>
 
                 <!-- Traveler Assistance -->
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3">Traveler Assistance</h5>
-                    <p><i class="fa fa-phone me-2"></i>+255 715 636 967 (EAT â€“ UTC +3)</p>
-                    <p><i class="fa fa-phone me-2"></i>+256 767 828 384 (EAT â€“ UTC +3)</p>
-                    <p><i class="fa fa-phone me-2"></i>+255 753 090 908 (PHT â€“ UTC +8)</p>
-                    <p><i class="fa fa-envelope me-2"></i>info@Kilimorasafaris.com</p>
+                    <p style="font-size: 0.9em; color: #555; margin-bottom: 0.5rem;">All numbers operate in EAT – UTC +3
+                    </p>
+                    <p><i class="fa fa-phone me-2"></i>+255 796 440 555</p>
+                    <p><i class="fa fa-phone me-2"></i>+255 762 008 009</p>
+                    <p><i class="fa fa-phone me-2"></i>+255 717 647 994</p>
                 </div>
 
                 <!-- Social Icons -->
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3">Follow Us</h5>
                     <div class="d-flex gap-3 fs-4">
-                        <a href="https://www.facebook.com/share/1GWydnMmsK/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/kilimora.adventure?igsh=cjVjaTV4dTZzZXk2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1GWydnMmsK/?mibextid=wwXIfr"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kilimora.adventure?igsh=cjVjaTV4dTZzZXk2"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-pinterest"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/@kilimora_adventure?_r=1&_t=ZS-92vfi2bYN0b"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.tiktok.com/@kilimora_adventure?_r=1&_t=ZS-92vfi2bYN0b"><i
+                                class="fab fa-tiktok"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-x-twitter"></i></a>
                     </div>
@@ -732,11 +838,27 @@
             </div>
 
             <div class="text-center mt-4 py-3" style="color:#777;">
-                Â© 2025 Kilimora Adventures â€” All Rights Reserved
+                © 2025 Kilimora Adventures — All Rights Reserved
             </div>
 
         </div>
     </footer>
+
+    <style>
+        .footer-list li {
+            margin-bottom: 8px;
+        }
+
+        .footer-list a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .footer-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
     <!-- Footer End -->
 
     <!-- Back to Top -->

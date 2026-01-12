@@ -276,11 +276,11 @@ for filename in html_files:
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(new_content)
             
-            print(f"✓ Updated: {filename}")
+            print(f"[OK] Updated: {filename}")
         else:
-            print(f"✗ Footer markers not found in: {filename}")
+            print(f"[SKIP] Footer markers not found in: {filename}")
     
     except Exception as e:
-        print(f"✗ Error processing {filename}: {str(e)}")
+        print(f"[ERROR] Error processing {filename}: {str(e)}")
 
 print("\nFooter update complete!")
