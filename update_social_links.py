@@ -12,7 +12,9 @@ html_dir = r"d:\website template\kilimora"
 # Get all HTML files
 html_files = [f for f in os.listdir(html_dir) if f.endswith('.html')]
 
-print(f"Found {len(html_files)} HTML files to update")
+print(f"Found {len(html_files)} HTML files to update\n")
+
+updated_count = 0
 
 for filename in html_files:
     filepath = os.path.join(html_dir, filename)
@@ -23,23 +25,23 @@ for filename in html_files:
         
         original_content = content
         
-        # Update Facebook links (looking for fa-facebook or fa-facebook-f)
+        # Update Facebook links - look for href="" followed by fa-facebook icon
         content = re.sub(
-            r'(<a[^>]*class="[^"]*fab fa-facebook[^"]*"[^>]*href=")[^"]*(")',
+            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-facebook)',
             r'\1' + FACEBOOK_URL + r'\2',
             content
         )
         
         # Update Instagram links
         content = re.sub(
-            r'(<a[^>]*class="[^"]*fab fa-instagram[^"]*"[^>]*href=")[^"]*(")',
+            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-instagram)',
             r'\1' + INSTAGRAM_URL + r'\2',
             content
         )
         
         # Update TikTok links
         content = re.sub(
-            r'(<a[^>]*class="[^"]*fab fa-tiktok[^"]*"[^>]*href=")[^"]*(")',
+            r'(href=")[^"]*("\s*>\s*<i[^>]*class="[^"]*fab fa-tiktok)',
             r'\1' + TIKTOK_URL + r'\2',
             content
         )
@@ -48,11 +50,12 @@ for filename in html_files:
         if content != original_content:
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
-            print(f"✓ Updated: {filename}")
+            print(f"[OK] Updated: {filename}")
+            updated_count += 1
         else:
-            print(f"- No changes: {filename}")
+            print(f"[ -] No changes: {filename}")
             
     except Exception as e:
-        print(f"✗ Error processing {filename}: {str(e)}")
+        print(f"[ERR] Error processing {filename}: {str(e)}")
 
-print("\nSocial media links update complete!")
+print(f"\nDone! Updated {updated_count} files.")
