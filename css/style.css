@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4B2E18;
+    --primary: #78B438;
     /* Tembea Africa logo brown */
-    --secondary: #4B2E18;
+    --secondary: #78B438;
     --light: #F5F5F5;
     --dark: #14141F;
 }
@@ -55,26 +55,26 @@
 /* Tembea Africa Button Color */
 .btn-primary,
 .btn.btn-primary {
-    background-color: #4B2E18 !important;
-    border-color: #4B2E18 !important;
+    background-color: #78B438 !important;
+    border-color: #78B438 !important;
 }
 
 .btn-primary:hover,
 .btn.btn-primary:hover {
-    background-color: #3A2413 !important;
-    border-color: #3A2413 !important;
+    background-color: #5A8F24 !important;
+    border-color: #5A8F24 !important;
 }
 
 .btn-secondary,
 .btn.btn-secondary {
-    background-color: #4B2E18 !important;
-    border-color: #4B2E18 !important;
+    background-color: #78B438 !important;
+    border-color: #78B438 !important;
 }
 
 .btn-secondary:hover,
 .btn.btn-secondary:hover {
-    background-color: #3A2413 !important;
-    border-color: #3A2413 !important;
+    background-color: #5A8F24 !important;
+    border-color: #5A8F24 !important;
 }
 
 .btn.btn-primary,
@@ -555,7 +555,7 @@
 .view-tours-underline {
     width: 200px;
     height: 2px;
-    background-color: #C89F6C;
+    background-color: #78B438;
     /* gold color like the screenshot */
     margin-top: 10px;
 }
@@ -580,7 +580,7 @@
 }
 
 .filter-btn {
-    background-color: #C89F6C;
+    background-color: #78B438;
     color: white;
     padding: 6px 18px;
     border-radius: 3px;
@@ -589,7 +589,7 @@
 }
 
 .active-filter {
-    background-color: #C89F6C;
+    background-color: #78B438;
     color: #fff !important;
 }
 
@@ -624,7 +624,7 @@
 }
 
 .rating {
-    color: #C89F6C;
+    color: #78B438;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -638,7 +638,7 @@
 .arrow-link {
     text-align: right;
     font-size: 22px;
-    color: #C89F6C;
+    color: #78B438;
     font-weight: bold;
 }
 
@@ -660,7 +660,7 @@
 .see-all-underline {
     width: 120px;
     height: 2px;
-    background-color: #C89F6C;
+    background-color: #78B438;
     margin: 10px auto 0;
 }
 
@@ -703,8 +703,8 @@
 }
 
 .filter-link.active-filter {
-    color: #d4a017;
-    border-bottom: 2px solid #d4a017;
+    color: #78B438;
+    border-bottom: 2px solid #78B438;
 }
 
 .dest-title {
@@ -716,7 +716,7 @@
 .dest-line {
     width: 45px;
     height: 4px;
-    background: #c9a24b;
+    background: #78B438;
     display: inline-block;
     margin-right: 12px;
     vertical-align: middle;
@@ -735,7 +735,7 @@
 .dest-underline {
     width: 50px;
     height: 3px;
-    background: #c9a24b;
+    background: #78B438;
     margin: 12px 0 20px;
 }
 
@@ -757,8 +757,8 @@
 }
 
 .dest-btn:hover {
-    color: #c9a24b;
-    border-color: #c9a24b;
+    color: #78B438;
+    border-color: #78B438;
 }
 
 .main-img {
@@ -876,7 +876,7 @@
 }
 
 .team-read-more:hover {
-    color: #d4a017;
+    color: #78B438;
     transform: translateY(-2px);
     text-shadow: 0 0 8px rgba(212, 160, 23, 0.3);
 }
@@ -888,7 +888,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #d4a017;
+    background-color: #78B438;
     transition: width 0.3s ease;
 }
 
