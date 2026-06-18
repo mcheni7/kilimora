@@ -318,7 +318,7 @@
             <div class="row g-5">
 
                 <!-- Booking Inquiry / Form -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h2 class="mb-4">Booking Inquiry</h2>
                     <p class="mb-4">Get in touch with us today! Whether you're planning your next adventure or have
                         questions, we're here to help.</p>
@@ -354,7 +354,50 @@
                             </div>
                         </div>
                     </form>
+                </div> -->
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+    <h2 class="mb-4" style="color: #2c3e50; font-weight: 700;">Start Your African Kilimora Adventure 🌍</h2>
+    <p class="mb-4" style="color: #555; line-height: 1.6;">
+        Ready to witness the breathtaking wildlife and beautiful landscapes of Tanzania? 
+        Fill out the form below, and our safari experts will craft the perfect itinerary just for you!
+    </p>
+    
+    <form action="send_email.php" method="POST">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required style="border-radius: 6px;">
+                    <label for="name">Your Full Name</label>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required style="border-radius: 6px;">
+                    <label for="email">Your Email Address</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required style="border-radius: 6px;">
+                    <label for="subject">Which Tour or Safari are you interested in?</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
+                        style="height: 150px; border-radius: 6px;" required></textarea>
+                    <label for="message">Tell us about your dream safari (Travel dates, number of guests, etc.)...</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit" style="font-weight: bold; font-size: 16px; border-radius: 6px; letter-spacing: 0.5px;">
+                    Request Free Safari Quote 🦁
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
 
                 <!-- Contact Details -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
